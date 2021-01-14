@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabing form content in js</title>
+</head>
+<body>
+    <h1 id="test1"></h1>
+    <h1 id="changeColor">This is first heading</h1>
+    <h2>This is second heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, exercitationem?</p>
+
+    <ul id="change">
+        <li>Name</li>
+        <li>Id</li>
+        <li>Subject</li>
+    </ul>
+
+   <div onmousedown="mDown(this)" onmouseup="mUp(this)" 
+    style="background-color: red; width: 100px; height: 30px; padding: 30px;">
+    Hey ! Click Me
+    </div>
+
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "yellow";
+            obj.innerHTML = "You Clicked";
+        }
+        
+        function mUp(obj) {
+            obj.style.backgroundColor = "blue";
+            obj.innerHTML = "Go Away";
+        }
+    </script>
+    
+</body>
+</html>

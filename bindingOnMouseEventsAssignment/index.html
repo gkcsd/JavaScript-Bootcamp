@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Binding on mouse Event</title>
+</head>
+<body>
+    <h1>This is first heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, adipisci.</p>
+    <ul>
+        <li>Name</li>
+        <li>Id</li>
+        <li>Sign</li>
+    </ul>
+
+    <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
+    style="background-color: red; width: 100px; height: 30px; padding: 30px;"> Hey ! Clicke Me Bro</div>
+
+    <Script>
+        function mouseOver(obj) {
+            obj.style.backgroundColor = "Yellow";
+            obj.innerHTML = "You Clicked Bro";
+            obj.style.opacity = "0.8";
+            obj.style.color = "green";
+            obj.style.borderRadius = "10px";
+        }
+
+        function mouseOut(obj) {
+            obj.style.backgroundColor = "Blue";
+            obj.innerHTML = "You Can Leave Now";
+            obj.style.opacity = "0.8";
+            obj.style.color = "white";
+            obj.style.borderRadius = "10px";
+        }
+    </Script>
+    
+</body>
+</html>
