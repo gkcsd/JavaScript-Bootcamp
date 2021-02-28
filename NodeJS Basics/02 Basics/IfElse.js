@@ -19,5 +19,5 @@ if (whoIsHere === "user") {
   console.log("Allow access to Teacher");
 } else {
   console.log("MESSAGE: Please verify yourself");
-  console.log("Please open an email account");
+  console.log("Send User An Email For Verification");
 }
