@@ -1,5 +1,5 @@
-let sayHello = function() {
-    console.log("Greeting message for user");
-    console.log("Message for user");
+let sayHello = function(name) {
+    console.log(`Greeting message for ${name}`);
+    console.log(`Hey ${name}`);
 }
-sayHello();
+sayHello("John");
