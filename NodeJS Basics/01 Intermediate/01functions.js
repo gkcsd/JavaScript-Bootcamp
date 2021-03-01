@@ -19,3 +19,10 @@ let Adder = function(num1, num2) {
     return Addition;
 }
 console.log(Adder(4,4));
+
+console.log();
+
+let guestUser = function(name = "Unknown", courseCount = 0) {
+    return 'Hello ' + name + ' and your course count is ' + courseCount;
+}
+console.log(guestUser('John', 6));
