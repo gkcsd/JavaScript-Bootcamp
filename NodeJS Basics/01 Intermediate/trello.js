@@ -4,5 +4,5 @@ console.log(days[2]);
 console.log();
 
 days.forEach((day, index) => {
-    console.log(`Starts with ${index} -- ${day}`);
+    console.log(`Starts with ${index+1} -- ${day}`);
 })
